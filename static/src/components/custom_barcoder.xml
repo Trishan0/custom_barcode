@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="custom_barcode.CustomBarcodeScanner" owl="1">
+        <div class="o_home_menu_background h-100">
+            <div class="container py-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-link p-0 me-3" t-on-click="goBack">
+                                <i class="fa fa-arrow-left"/>
+                            </button>
+                            <h3 class="mb-0">Barcode Scanner</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="reader" class="mb-3" style="width: 100%; max-width: 600px; margin: 0 auto;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

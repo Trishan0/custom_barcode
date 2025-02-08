@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <div t-name="custom_barcode.Buttons" class="o_custom_barcode_main_menu_container o_home_menu_background">
+<div class="o_custom_barcode_main_menu position-relative bg-light p-4 rounded">
+    <h1 class="mb-4 text-center">Operations</h1>
+
+    <!-- Buttons Group -->
+    <div class="row g-3">
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100 d-flex align-items-center justify-content-start" t-on-click="checkInventoryRecord">
+                <i class="bi bi-box2 me-2"></i>Inventory
+            </button>
+        </div>
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100 d-flex align-items-center justify-content-start" t-on-click="createNewTransferRecord">
+                <i class="bi bi-arrow-right-circle me-2"></i>Transfer
+            </button>
+        </div>
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100 d-flex align-items-center justify-content-start" t-on-click="createNewPickingRecord">
+                <i class="bi bi-arrow-right-circle me-2"></i>Consume
+            </button>
+        </div>
+<!--        <div class="col-12 col-md-6">-->
+<!--            <button class="btn btn-primary w-100 d-flex align-items-center justify-content-start" t-on-click="searchProductStock">-->
+<!--                <i class="bi bi-search me-2"></i>Stock-->
+<!--            </button>-->
+<!--        </div>-->
+        <div class="col-12 col-md-6">
+            <button class="btn btn-primary w-100 d-flex align-items-center justify-content-start" t-on-click="createNewAdditionalBarcode">
+                <i class="bi bi-file-earmark-plus me-2"></i>Secondary Barcode
+            </button>
+        </div>
+    </div>
+
+    <!-- Horizontal Line -->
+    <hr class="mb-4 d-none d-sm-block"/>
+</div>
+    </div>
+
+</templates>

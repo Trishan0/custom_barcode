@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <record id="action_barcode_home_js" model="ir.actions.client">
+            <field name="name">Barcode</field>
+            <field name="tag">custom_barcode.action_barcode_home_js</field>
+        </record>
+        <record id="action_barcode_button_js" model="ir.actions.client">
+            <field name="name">Buttons</field>
+            <field name="tag">custom_barcode.action_barcode_button_js</field>
+        </record>
+
+        <menuitem
+                id="barcode_home_menu"
+                name="Barcode"
+                action="custom_barcode.action_barcode_home_js"
+                web_icon="custom_barcode,static/description/icon.png"
+/>
+        <menuitem
+                id="barcode_buttons_menu"
+                parent="barcode_home_menu"
+                name="Opertaions"
+                action="custom_barcode.action_barcode_button_js"
+/>
+
+        <!--SubMenu under the inventory module's root menu-->
+<!--        <menuitem id="scan_barcode_menu_2"-->
+<!--                  name="Barcode Scan"-->
+<!--                  parent="stock.menu_stock_root"-->
+<!--                  action="action_barcode_home_js"-->
+<!--                  sequence="8"/>-->
+    </data>
+</odoo>
