@@ -21,12 +21,5 @@
                 name="Opertaions"
                 action="custom_barcode.action_barcode_button_js"
 />
-
-        <!--SubMenu under the inventory module's root menu-->
-<!--        <menuitem id="scan_barcode_menu_2"-->
-<!--                  name="Barcode Scan"-->
-<!--                  parent="stock.menu_stock_root"-->
-<!--                  action="action_barcode_home_js"-->
-<!--                  sequence="8"/>-->
     </data>
 </odoo>
